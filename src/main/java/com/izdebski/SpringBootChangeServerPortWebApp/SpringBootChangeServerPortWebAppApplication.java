@@ -18,6 +18,7 @@ public class SpringBootChangeServerPortWebAppApplication {
 	private static void setPort(SpringApplication springApplication) {
 		Map<String,Object> configMap = new HashMap<>();
 		configMap.put("SERVER_PORT", 8585);
+		configMap.put("SERVER_CONTEXT_PATH","/myapp");
 
 		springApplication.setDefaultProperties(configMap);
 	}

@@ -10,5 +10,6 @@ public class EmbeddedServletContainerCustomizerBean implements EmbeddedServletCo
     @Override
     public void customize(ConfigurableEmbeddedServletContainer container) {
         container.setPort(7171);
+        container.setContextPath("/mywebapp");
     }
 }
